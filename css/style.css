@@ -28,6 +28,10 @@ h1 {
     margin-bottom: 1%;
 }
 
+h2 {
+    font-size: 4rem;
+}
+
 h3 {
     font-size: 3rem;
     margin-bottom: 1%;
@@ -42,6 +46,15 @@ h3 {
     border-radius: 5px;
     display: inline-block;
     font-size: 4rem;
+    padding: 10px;
+    margin: 20px;
+}
+
+#btn-start {
+    border: 2px solid #0E8388;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 2rem;
     padding: 10px;
     margin: 20px;
 }
