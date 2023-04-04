@@ -20,7 +20,7 @@ function verificaChute(chute){
             <h3>O número secreto era -> ${numInt}</h3>
             </div>
             <div>
-            <input type="submit" value="* RESTART GAME *" id="btn-start">
+            <button id="jogar-novamente" class="btn-restart">* RESTART GAME *</button>
             </div>
         `;   
     }else if(numInt > numSecreto){
@@ -37,3 +37,9 @@ function verificaChute(chute){
 function ChuteValido(numInt) {
     return Number.isNaN(numInt);
 }
+
+document.body.addEventListener('click', (e) => {
+    if(e.target.id == 'jogar-novamente'){
+        window.location.reload();
+    }
+});
