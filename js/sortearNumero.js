@@ -1,5 +1,5 @@
 const menorValor = 1;
-const maiorValor = 100;
+const maiorValor = 1000;
 const numSecreto = sortearNumero();
 
 const elemMenorValor = document.getElementById('menor-valor');

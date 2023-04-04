@@ -4,8 +4,22 @@ function verificaChute(chute){
     const numInt = parseInt(chute);
 
     if(ChuteValido(numInt)){
-        elemMaiorMenor.innerHTML += `<div>Valor Inválido!!!></div>`;
+        if(chute === "game over"){
+            document.body.innerHTML = `
+                <div>
+                <h2>-> GAME OVER <-</h2>
+                <h4>* Clique no botão abaixo para reiniciar *</h4>
+                </br>
+                </div>
+                <div>
+                <button id="jogar-novamente" class="btn-restart">* RESTART GAME *</button>
+                </div>
+            `; 
+            return;
+        }else{
+            elemMaiorMenor.innerHTML += `<div><h3>Valor Inválido!!!</h3></div>`;
         return;
+        }
     }
 
     if(numInt < menorValor || numInt > maiorValor){
